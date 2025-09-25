@@ -10,6 +10,9 @@ module.exports = {
         'main-paragraph': '#8B8B8B',
         'shades-dark-10': '#E8E8E8',
         'shades-dark-40': '#A2A2A2',
+        'shades-dark-5': '#F3F3F3',
+        'shades-primary-10': '#EBEAFF',
+        'email-bg': '#F3F4F8',
       },
       fontFamily: {
         'poppins': ['Poppins', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],

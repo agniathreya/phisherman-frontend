@@ -1,0 +1,147 @@
+<div class="min-h-screen bg-email-bg">
+  <!-- Mobile-first responsive container -->
+  <div class="max-w-sm mx-auto bg-email-bg md:max-w-md lg:max-w-lg xl:max-w-2xl 2xl:max-w-4xl">
+    
+    <!-- Email composition interface -->
+    <div class="relative px-6 py-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
+      
+      <!-- Header with controls -->
+      <div class="flex justify-between items-start mb-8 md:mb-12">
+        <!-- Close button -->
+        <button (click)="navigateBack()" class="w-11 h-11 bg-white rounded-full flex items-center justify-center shadow-sm hover:shadow-md transition-shadow">
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none">
+            <path d="M16.192 6.34399L11.949 10.586L7.70703 6.34399L6.29303 7.75799L10.535 12L6.29303 16.242L7.70703 17.656L11.949 13.414L16.192 17.656L17.606 16.242L13.364 12L17.606 7.75799L16.192 6.34399Z" fill="#A2A2A2"/>
+          </svg>
+        </button>
+        
+        <!-- Send and more options -->
+        <div class="flex items-center gap-2">
+          <!-- Send button -->
+          <button class="w-11 h-11 bg-white rounded-full flex items-center justify-center shadow-sm hover:shadow-md transition-shadow">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none">
+              <path d="M31.4261 21.095L14.4261 13.095C14.0761 12.932 13.6631 12.983 13.3651 13.228C13.0661 13.473 12.9371 13.868 13.0301 14.242L14.9691 22L13.0301 29.758C12.9361 30.132 13.0661 30.528 13.3651 30.773C13.5481 30.923 13.7721 31 14.0001 31C14.1451 31 14.2901 30.969 14.4261 30.905L31.4261 22.905C31.7761 22.74 32.0001 22.388 32.0001 22C32.0001 21.612 31.7761 21.26 31.4261 21.095ZM15.4811 28.197L16.3201 24.84L22.0001 22L16.3201 19.16L15.4811 15.803L28.6511 22L15.4811 28.197Z" fill="#A2A2A2" transform="scale(0.6)" transform-origin="center"/>
+            </svg>
+          </button>
+          
+          <!-- More options -->
+          <button class="w-11 h-11 bg-white rounded-full flex items-center justify-center shadow-sm hover:shadow-md transition-shadow">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="5" r="2" fill="#A2A2A2"/>
+              <circle cx="12" cy="12" r="2" fill="#A2A2A2"/>
+              <circle cx="12" cy="19" r="2" fill="#A2A2A2"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Email info section -->
+      <div class="bg-white rounded-3xl p-5 mb-4 md:mb-6 shadow-sm">
+        <!-- To field -->
+        <div class="flex items-center justify-between pb-4 border-b border-shades-dark-5">
+          <div class="flex items-center gap-2">
+            <span class="text-sm font-medium text-main-paragraph font-poppins">To:</span>
+            <div class="bg-email-bg px-2 py-1 rounded-full">
+              <span class="text-xs font-bold text-main-paragraph font-poppins">You</span>
+            </div>
+          </div>
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none">
+            <path d="M16.293 9.293L12 13.586L7.70703 9.293L6.29303 10.707L12 16.414L17.707 10.707L16.293 9.293Z" fill="#A2A2A2"/>
+          </svg>
+        </div>
+        
+        <!-- From field -->
+        <div class="flex items-center justify-between py-3 border-b border-shades-dark-5">
+          <div class="flex items-center gap-1">
+            <span class="text-sm font-medium text-main-paragraph font-poppins">From:</span>
+            <span class="text-sm font-medium text-main-paragraph font-poppins">ares-dev@outlook.com</span>
+          </div>
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none">
+            <path d="M16.293 9.293L12 13.586L7.70703 9.293L6.29303 10.707L12 16.414L17.707 10.707L16.293 9.293Z" fill="#A2A2A2"/>
+          </svg>
+        </div>
+        
+        <!-- Subject field -->
+        <div class="flex items-center gap-1 pt-3">
+          <span class="text-sm font-medium text-main-paragraph font-poppins">Subject:</span>
+          <span class="text-sm font-medium text-main-paragraph font-poppins">About Us</span>
+        </div>
+      </div>
+
+      <!-- Email body -->
+      <div class="bg-white rounded-3xl p-5 mb-6 shadow-sm min-h-[400px] md:min-h-[500px] lg:min-h-[600px]">
+        <div class="space-y-4">
+          <!-- Highlight indicator -->
+          <div class="w-15 h-5 bg-shades-primary-10 rounded-lg mb-4"></div>
+          
+          <!-- Email content -->
+          <div class="space-y-4">
+            <p class="text-sm font-medium text-main-paragraph font-poppins">Hello!</p>
+            
+            <p class="text-sm font-medium text-main-paragraph font-poppins leading-relaxed">
+              [This section explains how the app works, the tech stack, and sends users to our Github]
+            </p>
+            
+            <p class="text-sm font-medium text-main-paragraph font-poppins leading-relaxed">
+              Quick question: how does a redesign usually work? You provide with the designs and once everything is OK we have to get someone to make the changes to the code? Or do you also provide the code? And if not can you recommend someone who can?
+            </p>
+            
+            <p class="text-sm font-medium text-main-paragraph font-poppins leading-relaxed italic">
+              On top of that, if the <em>redesign</em> is successful, we would like to design 2 or 3 more pages from scratch (a "news" page, a "my account" page etc). Is this something you can help with?
+            </p>
+            
+            <p class="text-sm font-medium text-main-paragraph font-poppins">
+              ARES Lab
+            </p>
+          </div>
+        </div>
+        
+        <!-- Upload and formatting toolbar -->
+        <div class="flex items-center justify-between mt-8">
+          <!-- Upload button -->
+          <button class="w-12 h-12 bg-email-bg rounded-full flex items-center justify-center">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none">
+              <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" fill="#A2A2A2"/>
+            </svg>
+          </button>
+          
+          <!-- Formatting toolbar -->
+          <div class="flex items-center gap-4 bg-white rounded-full px-4 py-2 shadow-lg">
+            <!-- Bold -->
+            <button class="p-1">
+              <svg class="w-3 h-3" viewBox="0 0 12 12" fill="none">
+                <path d="M8.977 5.33148C9.30482 4.8019 9.48508 4.1943 9.49911 3.57162C9.51313 2.94894 9.36041 2.33384 9.05676 1.79004C8.75311 1.24624 8.30959 0.793519 7.77213 0.478779C7.23467 0.164039 6.62283 -0.00127045 6 -2.35153e-05H1.5V12H7.5C8.29671 12.0008 9.06983 11.7296 9.69138 11.2312C10.3129 10.7328 10.7457 10.0371 10.918 9.2592C11.0903 8.48134 10.9918 7.66797 10.6388 6.95371C10.2858 6.23945 9.69955 5.66713 8.977 5.33148ZM3.5 1.99998H6C6.39782 1.99998 6.77936 2.15801 7.06066 2.43932C7.34196 2.72062 7.5 3.10215 7.5 3.49998C7.5 3.8978 7.34196 4.27933 7.06066 4.56064C6.77936 4.84194 6.39782 4.99998 6 4.99998H3.5V1.99998ZM7.5 9.99998H3.5V6.99998H7.5C7.89782 6.99998 8.27936 7.15801 8.56066 7.43932C8.84196 7.72062 9 8.10215 9 8.49998C9 8.8978 8.84196 9.27933 8.56066 9.56064C8.27936 9.84194 7.89782 9.99998 7.5 9.99998Z" fill="#8B8B8B"/>
+              </svg>
+            </button>
+            
+            <!-- Italic -->
+            <div class="p-2 bg-main-paragraph rounded-full">
+              <svg class="w-3 h-3" viewBox="0 0 12 12" fill="none">
+                <path d="M10.5 1V0H3V1H6.177L4.8135 11H1.5V12H9V11H5.823L7.1865 1H10.5Z" fill="white"/>
+              </svg>
+            </div>
+            
+            <!-- Underline -->
+            <button class="p-1">
+              <svg class="w-3 h-3" viewBox="0 0 12 12" fill="none">
+                <path d="M5.99994 10C4.93944 9.99881 3.92271 9.577 3.17283 8.82711C2.42294 8.07722 2.00113 7.0605 1.99994 6V0H2.99994V6C2.99994 6.79565 3.31601 7.55871 3.87862 8.12132C4.44123 8.68393 5.20429 9 5.99994 9C6.79559 9 7.55865 8.68393 8.12126 8.12132C8.68387 7.55871 8.99994 6.79565 8.99994 6V0H9.99994V6C9.99875 7.0605 9.57694 8.07722 8.82705 8.82711C8.07716 9.577 7.06044 9.99881 5.99994 10Z" fill="#8B8B8B"/>
+                <path d="M12 10.9997H0V11.9997H12V10.9997Z" fill="#8B8B8B"/>
+              </svg>
+            </button>
+            
+            <!-- Color picker -->
+            <div class="w-4 h-4 bg-main-secondary rounded"></div>
+            
+            <!-- Divider -->
+            <div class="w-0.5 h-4 bg-gray-300"></div>
+            
+            <!-- More options -->
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none">
+              <path d="M16.293 9.293L12 13.586L7.70703 9.293L6.29303 10.707L12 16.414L17.707 10.707L16.293 9.293Z" fill="#8B8B8B"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
