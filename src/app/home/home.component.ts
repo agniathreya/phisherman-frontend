@@ -15,7 +15,7 @@ export class HomeComponent {
   }
 
   navigateToGetStarted() {
-    // Add get started logic here
-    console.log('Get Started clicked');
+    // Navigate to dashboard after Auth0 authentication
+    this.router.navigate(['/dashboard']);
   }
 }
