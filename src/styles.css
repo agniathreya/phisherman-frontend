@@ -1,3 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --Main-White: #FFF;
+  --shades-dark-10: #E8E8E8;
+  --shades-dark-40: #A2A2A2;
+  --Main-Secondary: #EA4335;
+  --Main-Dark: #161616;
+  --Main-Paragraph: #8B8B8B;
+}
+
+@layer base {
+  html {
+    font-family: 'Satoshi', system-ui, sans-serif;
+  }
+  
+  body {
+    background-color: #FFF;
+    color: #161616;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply flex justify-center items-center gap-2.5 px-8 py-4 bg-main-secondary text-white font-poppins font-bold text-sm leading-[130%] rounded-16;
+  }
+  
+  .btn-secondary {
+    @apply flex justify-center items-center gap-2.5 px-8 py-4 border border-shades-dark-10 text-shades-dark-40 font-poppins font-bold text-sm leading-[130%] rounded-16;
+  }
+}
