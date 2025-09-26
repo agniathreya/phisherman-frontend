@@ -14,6 +14,7 @@ module.exports = {
         'shades-dark-5': '#F3F3F3',
         'shades-primary-10': '#EBEAFF',
         'email-bg': '#F3F4F8',
+        'safe-green': '#53CC5B',
       },
       fontFamily: {
         'poppins': ['Poppins', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],

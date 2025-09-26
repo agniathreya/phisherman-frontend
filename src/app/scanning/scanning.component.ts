@@ -19,4 +19,22 @@ export class ScanningComponent {
   returnToHomepage() {
     this.router.navigate(['/']);
   }
+
+  // Methods to navigate to results (for backend integration)
+  navigateToAlert() {
+    this.router.navigate(['/alert']);
+  }
+
+  navigateToSafe() {
+    this.router.navigate(['/safe']);
+  }
+
+  // Simulate scan results for testing (remove in production)
+  simulateMaliciousResult() {
+    this.navigateToAlert();
+  }
+
+  simulateSafeResult() {
+    this.navigateToSafe();
+  }
 }
