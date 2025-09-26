@@ -30,6 +30,10 @@
   .btn-primary {
     @apply flex justify-center items-center gap-2.5 px-8 py-4 bg-main-secondary text-white font-poppins font-bold text-sm leading-[130%] rounded-16;
   }
+
+  .btn-primary-blue {
+    @apply flex justify-center items-center gap-2.5 px-8 py-4 bg-main-primary text-white font-poppins font-bold text-sm leading-[130%] rounded-16;
+  }
   
   .btn-secondary {
     @apply flex justify-center items-center gap-2.5 px-8 py-4 border border-shades-dark-10 text-shades-dark-40 font-poppins font-bold text-sm leading-[130%] rounded-16;
