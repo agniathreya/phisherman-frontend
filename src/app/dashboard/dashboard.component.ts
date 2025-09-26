@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',
@@ -10,6 +11,8 @@ import { CommonModule } from '@angular/common';
 })
 export class DashboardComponent {
   showAlert = true;
+
+  constructor(private router: Router) {}
 
   closeAlert() {
     this.showAlert = false;
@@ -23,5 +26,9 @@ export class DashboardComponent {
   onEmailClick(emailId: number) {
     // Handle email selection
     console.log('Email clicked:', emailId);
+  }
+
+  navigateHome() {
+    this.router.navigate(['/']);
   }
 }
