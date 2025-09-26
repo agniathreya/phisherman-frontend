@@ -147,9 +147,9 @@
           </div>
 
           <!-- Email Card 4 -->
-          <div (click)="onEmailClick(4)" class="flex items-start gap-3 p-4 bg-email-bg border border-shades-dark-5 rounded-2xl cursor-pointer hover:bg-gray-50 transition-colors">
-            <img 
-              src="https://api.builder.io/api/v1/image/assets/TEMP/c1c29718f94f972513772111e987a75563504f3d?width=96" 
+          <div class="flex items-start gap-3 p-4 bg-email-bg border border-shades-dark-5 rounded-2xl">
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/c1c29718f94f972513772111e987a75563504f3d?width=96"
               alt="Doug Nelson avatar"
               class="w-12 h-12 rounded-full object-cover flex-shrink-0"
             />
@@ -161,46 +161,26 @@
               <p class="text-sm font-medium text-main-paragraph font-poppins mt-2 line-clamp-2">
                 Salmon, cod, even tuna. I'm in
               </p>
+              <button
+                (click)="navigateHome()"
+                class="mt-4 flex items-center gap-3 px-4 py-3 bg-white rounded-2xl border border-gray-100 hover:bg-gray-50 transition-colors"
+              >
+                <svg class="w-5 h-6 flex-shrink-0" viewBox="0 0 18 24" fill="none">
+                  <path d="M16.0909 24H1.90906C1.00906 24 0.272705 23.2636 0.272705 22.3636V1.63636C0.272705 0.736359 1.00906 0 1.90906 0H11.7273L17.7273 6V22.3636C17.7273 23.2636 16.9909 24 16.0909 24Z" fill="#0086F9"/>
+                  <path d="M11.7273 0L17.7273 6H11.7273V0Z" fill="#0067D9"/>
+                  <path d="M4.0909 9.27271H13.9091V10.6363H4.0909V9.27271Z" fill="#FBFFFF"/>
+                  <path d="M4.0909 12.5454H13.9091V13.9091H4.0909V12.5454Z" fill="#FBFFFF"/>
+                  <path d="M4.0909 15.8182H11.1818V17.1818H4.0909V15.8182Z" fill="#FBFFFF"/>
+                </svg>
+                <div class="flex flex-col items-start">
+                  <span class="text-xs font-bold text-main-paragraph font-poppins">Return to Homepage</span>
+                  <span class="text-xs font-medium text-shades-dark-40 font-satoshi">456 kb</span>
+                </div>
+              </button>
             </div>
             <div class="flex flex-col items-end gap-8">
               <span class="text-xs font-bold text-shades-dark-40 font-poppins">1 day</span>
               <div class="w-2 h-2 bg-main-secondary rounded-full"></div>
-            </div>
-          </div>
-
-          <!-- Email Card 5 -->
-          <div (click)="onEmailClick(5)" class="flex items-start gap-3 p-4 bg-white rounded-2xl cursor-pointer hover:bg-gray-50 transition-colors">
-            <img 
-              src="https://api.builder.io/api/v1/image/assets/TEMP/ad33659c33381eac40061641b81f19d65a13ad9f?width=96" 
-              alt="John Doe avatar"
-              class="w-12 h-12 rounded-full object-cover flex-shrink-0"
-            />
-            <div class="flex-1 min-w-0">
-              <div class="flex flex-col">
-                <span class="text-sm font-medium text-main-paragraph font-poppins">John Doe</span>
-                <h3 class="text-base font-black text-main-dark font-poppins">Apple Support</h3>
-              </div>
-              <p class="text-sm font-medium text-main-paragraph font-poppins mt-2 line-clamp-2">
-                We are looking for a Senior UX designer to retouch our work.
-              </p>
-            </div>
-            <div class="flex flex-col items-end gap-8">
-              <span class="text-xs font-bold text-shades-dark-40 font-poppins">1 day</span>
-            </div>
-          </div>
-
-          <!-- Attachment card -->
-          <div class="flex items-center gap-3 p-3 bg-white rounded-2xl border border-gray-100 mx-auto max-w-[280px]">
-            <svg class="w-5 h-6 flex-shrink-0" viewBox="0 0 18 24" fill="none">
-              <path d="M16.0909 24H1.90906C1.00906 24 0.272705 23.2636 0.272705 22.3636V1.63636C0.272705 0.736359 1.00906 0 1.90906 0H11.7273L17.7273 6V22.3636C17.7273 23.2636 16.9909 24 16.0909 24Z" fill="#0086F9"/>
-              <path d="M11.7273 0L17.7273 6H11.7273V0Z" fill="#0067D9"/>
-              <path d="M4.0909 9.27271H13.9091V10.6363H4.0909V9.27271Z" fill="#FBFFFF"/>
-              <path d="M4.0909 12.5454H13.9091V13.9091H4.0909V12.5454Z" fill="#FBFFFF"/>
-              <path d="M4.0909 15.8182H11.1818V17.1818H4.0909V15.8182Z" fill="#FBFFFF"/>
-            </svg>
-            <div class="flex flex-col">
-              <span class="text-xs font-bold text-main-paragraph font-poppins">Return to Homepage.docx</span>
-              <span class="text-xs font-medium text-shades-dark-40 font-satoshi">456 kb</span>
             </div>
           </div>
         </div>
