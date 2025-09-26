@@ -1,13 +1,13 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { Router } from '@angular/router';
+import { Component } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { Router } from "@angular/router";
 
 @Component({
-  selector: 'app-dashboard',
+  selector: "app-dashboard",
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './dashboard.component.html',
-  styleUrl: './dashboard.component.css'
+  templateUrl: "./dashboard.component.html",
+  styleUrl: "./dashboard.component.css",
 })
 export class DashboardComponent {
   showAlert = true;
@@ -20,15 +20,15 @@ export class DashboardComponent {
 
   onComposeClick() {
     // Handle compose action
-    console.log('Compose clicked');
+    console.log("Compose clicked");
   }
 
   onEmailClick(emailId: number) {
     // Handle email selection
-    console.log('Email clicked:', emailId);
+    console.log("Email clicked:", emailId);
   }
 
   navigateHome() {
-    this.router.navigate(['/']);
+    this.router.navigate(["/"]);
   }
 }
